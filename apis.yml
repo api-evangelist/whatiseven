@@ -1,7 +1,25 @@
 aid: whatiseven
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/whatiseven.png
 name: whatiseven
-description: whatiseven is a company surfaced as a portfolio company of slow-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: whatiseven (Even, formerly Even Responsible Finance) was an earned-wage-access
+  and personal-finance fintech that let workers access a portion of their pay before payday,
+  budget with "okay to spend" guidance, and automatically save. Backed by Slow Ventures, Even
+  was acquired by One (Walmart's fintech venture, now OnePay) and folded into the OnePay @Work
+  earned-wage-access product ("Instapay"). The whatiseven.com domain now redirects through
+  even.com to onepay.com/atwork. Even operates no independent public developer platform, API,
+  or documentation, and the acquirer OnePay publishes no public API surface either. This profile
+  is retained as a network record of the company and its acquisition.
 url: https://raw.githubusercontent.com/api-evangelist/whatiseven/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,19 @@ x-backed-by:
 - slow-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: onepay
+x-redirects-to: https://www.onepay.com/atwork
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Earned Wage Access
+- Personal Finance
+- Financial Services
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/whatiseven-domain-security.yml
 - type: Website
   url: https://whatiseven.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
