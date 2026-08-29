@@ -32,6 +32,9 @@ description: whatiseven (Even, formerly Even Responsible Finance) was an earned-
   or documentation, and the acquirer OnePay publishes no public API surface either. This profile
   is retained as a network record of the company and its acquisition.
 url: https://raw.githubusercontent.com/api-evangelist/whatiseven/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Even operates no independent public developer platform, API, or documentation, and the acquirer OnePay publishes no public API surface either."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
